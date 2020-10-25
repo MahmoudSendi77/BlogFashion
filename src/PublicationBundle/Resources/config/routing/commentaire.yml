@@ -1,0 +1,28 @@
+comment_index:
+    path:     /
+    defaults: { _controller: "PublicationBundle:Commentaire:index" }
+    methods:  GET
+
+comment_show:
+    path:     /{id}/show
+    defaults: { _controller: "PublicationBundle:Commentaire:show" }
+    methods:  GET
+
+comment_new:
+    path:     /new
+    defaults: { _controller: "PublicationBundle:Commentaire:new" }
+    methods:  [GET, POST]
+
+comment_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PublicationBundle:Commentaire:edit" }
+    methods:  [GET, POST]
+
+comment_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PublicationBundle:Commentaire:delete" }
+    methods:  DELETE
+commentA_index:
+    path:     /AdminC
+    defaults: { _controller: "PublicationBundle:Commentaire:indexAdminC" }
+    methods:  GET

@@ -1,0 +1,14 @@
+
+{{ form_start(form,{'attr':{'novalidate':'novalidate'}} ) }}
+       Your Deal Name : {{ form_row(form.productname) }}
+       Description :    {{ form_row(form.productdescription) }}
+       Stock :          {{ form_widget(form.stock) }}
+       Price            {{ form_row(form.price) }}
+
+
+       Photo :          {{ form_widget(form.productphoto) }}
+       Category:        {{ form_widget(form.productcatid) }}
+
+
+<button type="submit" class="btn btn-primary">Add</button>
+{{ form_end(form) }}

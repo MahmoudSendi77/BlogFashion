@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+  {% block header %}
+      <!-- Header -->
+      <header class="masthead">
+          <div class="container">
+              <div class="intro-text">
+                  <div class="intro-lead-in">Welcome To Chick Click!</div>
+                  <div class="intro-heading text-uppercase">WELCOM TO your asks</div>
+              </div>
+          </div>
+      </header>
+
+  {% endblock %}
+
+{% block other %}
+
+    <h1>Asks list</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>sender</th>
+            <th>Messagedate</th>
+            <th>Messagedetails</th>
+
+
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for ask in asks %}
+            <tr>
+                <td>{{ ask.askedId }}</td>
+                <td>{% if ask.messageDate %}{{ ask.messageDate|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ ask.messageDetails }}</td>
+
+
+
+                <td>
+                    <ul>
+
+                        <a href="{{ path('ask_showask2', { 'id': ask.id }) }}">show</a>
+
+
+
+
+
+
+
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+{#
+            <a href="{{ path('ask_new') }}">Create a new ask</a>
+#}
+            <a >Create a new ask</a>
+
+        </li>
+    </ul>
+{% endblock %}

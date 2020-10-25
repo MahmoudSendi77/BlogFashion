@@ -1,0 +1,149 @@
+{% extends "base.html.twig" %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Chick Click!</div>
+                <div class="intro-heading text-uppercase">WELCOME TO the reclamations</div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
+{% block aya %}
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <CENTER><input type="text" id="search" placeholder="CHERCHER RECLAMATION ..."></CENTER>
+
+
+<center><table id="tableac" border="0">
+        </br>
+        </br>
+    <tr>
+        <td><H6>REPORTER</H6></td>
+        <td><h6>REPORTER MAIL</h6></td>
+        <td><h6>RECLAMATION ABOUT</h6></td>
+        <td><h6>PRIORITY</h6></td>
+        <td><h6>DESCRIBE YOUR CLAIMS</h6></td>
+        <td><h6> TICKET DATE </h6></td>
+
+
+    </tr>
+    {% for ticket in listTicket %}
+        <tr>
+            <td>{{ ticket.reporter }}</td>
+            <td>{{ ticket.reporterMail }}</td>
+            <td>{{ ticket.reclamationAbout }}</td>
+            <td>{{ ticket.priority }}</td>
+            <td>{{ ticket.description }}</td>
+            <td>{{ ticket.dateTicket |date}}</td>
+
+
+            <td><a href="{{path('update_ticket',{'id':ticket.id})}}">update</a></td>
+            <td><a href="{{path('delete_ticket',{'id':ticket.id})}}">delete</a></td>
+
+
+        </tr>
+        <script>
+            $(document).ready(function(){
+                $('#search').keyup(function(){
+                    search_table($(this).val());
+                });
+                function search_table(value){
+                    $('#tableac tbody tr').each(function(){
+                        var found = 'false';
+                        $(this).each(function(){
+                            if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)
+                            {
+                                found = 'true';
+                            }
+                        });
+                        if(found == 'true')
+                        {
+                            $(this).show();
+
+                        }
+                        else
+                        {
+                            $(this).hide();
+
+                        }
+                    });
+                }
+            });
+        </script>
+
+
+    {% endfor %}
+
+    </table></center>
+    <div>
+        <td><a href="{{path('create_ticket')}}">Add A new reclamation</a></td>
+    </div>
+{% endblock %}
+{% block Portfolio %}
+    <!-- Portfolio Grid -->
+    <section class="bg-light page-section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Reclamations</h2>
+                    <h3 class="section-subheading text-muted">Leave your ticket here.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>PUT ON YOUR RECLAMATION</h4>
+                        <p class="text-muted">Illustration</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>CHECK YOUR FEED BACK NOTIFICATIONS</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>CHECK YOUR TICKET HISTORY</h4>
+                        <p class="text-muted">Identity</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block footer %}
+    <footer class=" py-5 bg-dark">
+        <div class="container">
+            <div class="m-0 text-center text-white">Copyright &copy; Chick Click 2019</div>
+            <div class="m-0 text-center text-white">Here you can always get your CLICK and be in the FLEEK</div>
+        </div>
+    </footer>
+{% endblock %}

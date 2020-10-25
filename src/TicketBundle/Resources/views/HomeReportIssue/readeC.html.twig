@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Chick Click!</div>
+                <div class="intro-heading text-uppercase">WELCOME TO the Category of reclamations</div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
+{% block aya %}
+<center><table border="0">
+
+        <tr>
+            <td><H6>Type of the TICKET</H6></td>
+            <td><h6>DESCRIBE category of the ISSUE</h6></td>
+
+        </tr></br>
+        {% for reportissue in listIssue %}
+            <tr>
+                <td>{{ reportissue.typeR }}</td>
+                <td>{{ reportissue.content }}</td>
+
+                <td><a href="{{path('update_reportissue',{'id':reportissue.id})}}">update</a></td>
+                <td><a href="{{path('delete_reportissue',{'id':reportissue.id})}}">delete</a></td>
+
+            </tr>
+
+        {% endfor %}
+        <div>
+            <td><a href="{{path('create_reportissue')}}">Add A new Category</a></td>
+        </div>
+
+    </table></center>
+    </br>
+    <center><h6><a href="{{path('create_ticket')}}">Attribute your ticket to a category</a></h6></center>
+
+{% endblock %}

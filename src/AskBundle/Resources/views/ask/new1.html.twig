@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+
+
+
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block other %}
+<br>
+
+<h1>Ask me!</h1>
+<br>
+
+
+
+
+<form action="{{ path('AskBundle_homeask_new') }}" method="post">
+
+
+    <textarea class="form-control" name="message" placeholder="write your ask here" ></textarea>
+    <br>
+    <ul>
+        <input class="btn btn-primary btn-l text-uppercase" type="submit" name="envoi" value="send">
+        <input class="btn btn-primary btn-l text-uppercase"  name="modify" value="modify">
+
+
+
+        <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index') }}">Back to the list</a>
+
+
+    </ul>
+
+</form>
+{% endblock %}

@@ -1,0 +1,68 @@
+follow_follow:
+    resource: "@FollowBundle/Controller/"
+    type:     annotation
+    prefix:   /follow
+
+ask_ask:
+    resource: "@AskBundle/Controller/"
+    type:     annotation
+    prefix:   /ask
+
+follow:
+    resource: "@FollowBundle/Resources/config/routing.yml"
+    prefix:   /follow1
+
+ask:
+    resource: "@AskBundle/Resources/config/routing.yml"
+    prefix:   /ask1
+
+
+
+forum:
+    resource: "@ForumBundle/Resources/config/routing.yml"
+    prefix:   /forum
+
+
+
+publication:
+    resource: "@PublicationBundle/Resources/config/routing.yml"
+    prefix:   /pub
+
+product:
+    resource: "@ProductBundle/Resources/config/routing.yml"
+    prefix:   /product
+
+ticket:
+    resource: "@TicketBundle/Resources/config/routing.yml"
+    prefix:   /ticket
+
+esprit_api:
+    resource: "@EspritApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#mahmoud_event_event:
+#    resource: "@MahmoudEventBundle/Controller/EventController.php"
+#    type:     annotation
+
+mahmoud_event:
+    resource: "@MahmoudEventBundle/Resources/config/routing.yml"
+    prefix:   /event
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+# routing.yml / routes.yaml
+
+mgilet_notification:
+    resource: "@MgiletNotificationBundle/Controller/"
+    prefix: /notifications
+
+

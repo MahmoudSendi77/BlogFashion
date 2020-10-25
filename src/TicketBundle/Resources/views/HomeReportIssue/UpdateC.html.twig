@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Chick Click!</div>
+                <div class="intro-heading text-uppercase">WELCOME TO the reclamations</div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block aya %}
+    <h1>Update this Ticket category</h1>
+
+    {{ form_start(form) }}
+    Type of the category : {{ form_widget(form.typeR) }}</br>
+    Content of the category: {{ form_widget(form.content) }}</br>
+
+    {#{{ form_widget(form.save) }}</br>#}
+    <button type="submit" class="btn btn-primary">Update</button>
+    {{ form_end(form) }}
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base_back.html.twig" %}
+{% block content_event %}
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <CENTER><input type="text" id="search" placeholder="CHERCHER RECLAMATION ..."></CENTER>
+
+
+    <center><table class="table" id="tableac">
+            <thead class="thead-dark">
+
+
+            <tr>
+                <tH scope="col">REPORTER</tH>
+                <tH scope="col">REPORTER MAIL</th>
+                <tH scope="col">RECLAMATION ABOUT</th>
+                <tH scope="col">PRIORITY</th>
+                <tH scope="col">DESCRIBE YOUR CLAIMS</th>
+                <tH scope="col"> TICKET DATE </th>
+                <tH scope="col">CAPTURES</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for ticket in listTicket %}
+                <tr>
+                    <td>{{ ticket.reporter }}</td>
+                    <td>{{ ticket.reporterMail }}</td>
+                    <td>{{ ticket.reclamationAbout }}</td>
+                    <td>{{ ticket.priority }}</td>
+                    <td>{{ ticket.description }}</td>
+                    <td>{{ ticket.dateTicket |date}}</td>
+                    <td>
+                        <img  src="{{ ticket.displayphoto }}" width="200" height="121" class="card" >
+                    </td>
+                    <td><a href="{{path('deleteA_ticket',{'id':ticket.id})}}">Delete</a></td>
+                    <td><a href="{{path('reactadmin_index',{'id':ticket.id})}}">Reply</a></td>
+
+                </tr>
+            </tbody>
+                <script>
+                    $(document).ready(function(){
+                        $('#search').keyup(function(){
+                            search_table($(this).val());
+                        });
+                        function search_table(value){
+                            $('#tableac tbody tr').each(function(){
+                                var found = 'false';
+                                $(this).each(function(){
+                                    if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)
+                                    {
+                                        found = 'true';
+                                    }
+                                });
+                                if(found == 'true')
+                                {
+                                    $(this).show();
+
+                                }
+                                else
+                                {
+                                    $(this).hide();
+
+                                }
+                            });
+                        }
+                    });
+                </script>
+
+            {% endfor %}
+        </table></center>
+{% endblock %}

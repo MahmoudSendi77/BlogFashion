@@ -1,0 +1,32 @@
+publication_comment:
+    resource: "@PublicationBundle/Resources/config/routing/commentaire.yml"
+    prefix:   /comment
+
+publication_homepage:
+    path:     /
+    defaults: { _controller: PublicationBundle:Default:index }
+
+publication_pub:
+    resource: "@PublicationBundle/Resources/config/routing/publication.yml"
+    prefix:   /pub
+
+affiche_mobiles:
+    path:     /affichemobile
+    defaults: { _controller: PublicationBundle:Mobile22:affichePubMobile }
+
+find_mobiles:
+    path:     /findmobile/{id}
+    defaults: { _controller: PublicationBundle:Mobile22:findmobile }
+
+add_mobiles:
+    path:     /newmobile
+    defaults: { _controller: PublicationBundle:Mobile22:newmobile }
+sup_mobiles:
+    path:     /suppub
+    defaults: { _controller: PublicationBundle:Mobile22:suppub }
+
+modif_mobiles:
+    path:     /modifpub
+    defaults: { _controller: PublicationBundle:Mobile22:modifpub }
+
+

@@ -1,0 +1,83 @@
+
+ask_homep:
+    path:     /askhomep/{id}
+    defaults: { _controller: AskBundle:Ask:index}
+ask_homep1:
+        path:     /askhomep1
+        defaults: { _controller: AskBundle:Ask:index1}
+
+
+ask_showask2:
+        path:     /askhomepp1
+        defaults: { _controller: AskBundle:Ask:show}
+
+ask_deleteask:
+    path:     /askdel/{id}
+    defaults: { _controller: AskBundle:Ask:deleteEvent}
+ask_make:
+    path:     /makeask/{msg1}
+    defaults: { _controller: AskBundle:Ask:faireask}
+ask_make1:
+    path:     /makeask1
+    defaults: { _controller: AskBundle:Ask:new7}
+newfolow:
+    path:     /newfolow
+    defaults: { _controller: FollowBundle:Follower:new}
+deletefolow:
+    path:     /deletefolow
+    defaults: { _controller: FollowBundle:Follower:delete}
+block_make:
+    path:     /block
+    defaults: { _controller: AskBundle:Ask:block}
+block_go:
+    path:     /deblock
+    defaults: { _controller: AskBundle:Ask:deblock}
+show_go:
+    path:     /show1/{id}
+    defaults: { _controller: AskBundle:Ask:show2}
+searchprofil:
+    path:     /searchprofil
+    defaults: { _controller: AskBundle:Ask:searrch}
+searchnotif:
+    path:     /searchnotif
+    defaults: { _controller: AskBundle:Ask:searrchyy}
+
+
+
+
+affiche_ask:
+    path:     /afficheaskMobile
+    defaults: { _controller: AskBundle:Mobile33:afficheaskMobile}
+#
+# find_ask:
+#      path:     /findask1111/{id}
+#      defaults: { _controller: AskBundle:Mobile33:find}
+findask:
+    path:     /findask1996/{id}
+    defaults: { _controller: AskBundle:Mobile33:all}
+
+#newfolowmobile:
+#        path:     /newfolowmobile
+#        defaults: { _controller: AskBundle:Mobile33:newfolow}
+neeeewask:
+    path:     /neeewask
+    defaults: { _controller: AskBundle:Mobile33:newMobileask}
+deleeeteask:
+  path:     /deleeeeeteask/{id}
+  defaults: { _controller: AskBundle:Mobile33:supppp}
+deleefoloowteask:
+    path:     /deleeeeetefolowask
+    defaults: { _controller: AskBundle:Mobile33:supfolow}
+newfoloowteask:
+    path:     /neeewfolowask
+    defaults: { _controller: AskBundle:Mobile33:newfolowmobile}
+veriffoloowteask:
+    path:     /veriiffolowask
+    defaults: { _controller: AskBundle:Mobile33:verifierfolowMobile}
+
+
+
+
+
+
+

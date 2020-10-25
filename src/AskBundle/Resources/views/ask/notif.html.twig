@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Your notifications!</div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block other %}
+    <br>
+
+    <table  class="col-lg-9 ">
+
+
+        <tbody>
+        {% for notifa in notifs %}
+            <tr>
+
+
+
+                <td>your ask << {{ notifa.messageDetails }} >> has been changed to << {{ notifa.newmessageDetails }} >> </td>
+
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <br>    <br>
+    </table>
+
+
+
+{% endblock %}

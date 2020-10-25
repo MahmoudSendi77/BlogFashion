@@ -1,0 +1,24 @@
+reportissue_index:
+    path:     /
+    defaults: { _controller: "TicketBundle:ReportIssue:index" }
+    methods:  GET
+
+reportissue_show:
+    path:     /{id}/show
+    defaults: { _controller: "TicketBundle:ReportIssue:show" }
+    methods:  GET
+
+reportissue_new:
+    path:     /new
+    defaults: { _controller: "TicketBundle:ReportIssue:new" }
+    methods:  [GET, POST]
+
+reportissue_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TicketBundle:ReportIssue:edit" }
+    methods:  [GET, POST]
+
+reportissue_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TicketBundle:ReportIssue:delete" }
+    methods:  DELETE

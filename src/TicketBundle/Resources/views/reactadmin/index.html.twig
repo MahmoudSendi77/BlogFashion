@@ -1,0 +1,41 @@
+{% extends 'dashbord.html.twig' %}
+
+{% block body %}
+    <h1>React Admin's list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Reaction</th>
+                <th>Submitted At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for reactAdmin in reactAdmins %}
+            <tr>
+                <td><a href="{{ path('reactadmin_show', { 'id': reactAdmin.id }) }}">{{ reactAdmin.id }}</a></td>
+                <td>{{ reactAdmin.reaction }}</td>
+                <td>{% if reactAdmin.submittedAt %}{{ reactAdmin.submittedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('reactadmin_show', { 'id': reactAdmin.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('reactadmin_edit', { 'id': reactAdmin.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('reactadmin_new') }}">Create a new reactAdmin</a>
+        </li>
+    </ul>
+{% endblock %}

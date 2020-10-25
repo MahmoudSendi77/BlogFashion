@@ -1,0 +1,36 @@
+{% extends "base_back.html.twig" %}
+{% block content_event %}
+
+    <center><table class="table" >
+            <thead class="thead-dark">
+            <tr>
+
+            <tr>
+                <th scope="col">Type of the TICKET</th>
+                <th scope="col">DESCRIBE category of the ISSUE</th>
+
+            </tr></br>
+            </thead>
+            <tbody>
+            {% for reportissue in listIssue %}
+                <tr>
+                    <td>{{ reportissue.typeR }}</td>
+                    <td>{{ reportissue.content }}</td>
+
+                    <td><a href="{{path('updateA_reportissue',{'id':reportissue.id})}}" class="white-text d-flex justify-content-end"><h5> Update <i class="fas fa-angle-double-right"></i></h5></a></td>
+                    <td><a href="{{path('deleteA_reportissue',{'id':reportissue.id})}}" class="white-text d-flex justify-content-end"><h5> Delete <i class="fas fa-angle-double-right"></i></h5></a></td>
+
+                </tr>
+            </tbody>
+
+            {% endfor %}
+            <div>
+                <td><a href="{{path('createA_reportissue')}}">Add A new Category</a></td>
+            </div>
+
+        </table></center>
+    </br>
+
+    <center>
+
+{% endblock %}

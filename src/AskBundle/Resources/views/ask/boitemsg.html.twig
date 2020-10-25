@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div >
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+        </div>
+    </header>
+
+{% endblock %}
+{% block other %}
+    <br>
+<br>
+    <br><br>
+
+
+    {% if (verifblok == 0) %}
+
+        <a href="{{ path('block_make') }}">
+            <input class="btn btn-primary btn-l text-uppercase" type="button"  id="block" value="stop  asks"  /><br /><br />
+        </a>
+        {% else%}
+            <a href="{{ path('block_go') }}" >
+            <input class="btn btn-primary btn-l text-uppercase" type="button"  id="block" value="go  asks"  /><br /><br />
+            </a>
+
+    {% endif %}
+
+<table  class="col-lg-9 text-center">
+    <thead>
+    <tr>
+
+        <th>date</th>
+        <th>Message</th>
+
+
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <br>
+    <br>
+    {% for ask in asks %}
+        <tr>
+
+            <td>{% if ask.messageDate %}{{ ask.messageDate|date('Y-m-d') }}{% endif %}</td>
+
+            <td>{{ ask.messageDetails }}</td>
+
+            {#<td>{{ ask.askedId }}</td>#}
+            <td>
+                <ul>
+
+                    <a href="{{ path('show_go', { 'id': ask.id }) }}">show</a>
+
+
+                    <a href="{{ path('ask_deleteask', { 'id': ask.id }) }}">delete</a>
+
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+{% endblock %}

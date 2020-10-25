@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="61aa584e-314d-470a-b9af-04245f34c716" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Controller/AskController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Controller/Mobile33Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Entity/Ask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Entity/Block.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Entity/Clockwork.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Entity/ClockworkException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Entity/Notif.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Form/AskType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Repository/AskRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Repository/BlockRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Repository/NotifRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Repository/sms.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/config/routing.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/boitemsg.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/document.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/makeask.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/new1.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/notif.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/profilfarah.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/search.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/show1.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/userid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/ask/visitedid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/homeask/farah.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Resources/views/homeask/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Tests/Controller/AskControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AskBundle/Tests/Controller/Mobile33ControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FollowBundle/Controller/FollowerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FollowBundle/Entity/Follower.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FollowBundle/Form/FollowerType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FollowBundle/Repository/FollowerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FollowBundle/Resources/config/routing.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FollowBundle/Tests/Controller/FollowerControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Controller/CategorieSuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Controller/ChartSuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Controller/CommentaireSuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Controller/MobileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Controller/SujetController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Entity/CategorieSu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Entity/CommentaireSu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Entity/Sujet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Form/CategorieSuType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Form/CommentaireSuType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Form/RechercheType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Form/SujetType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Repository/CategorieSuRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Repository/CommentaireRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Repository/CommentaireSuRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Repository/SujetRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/config/routing/routingmobile.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/RechercheForum.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/admin_dashbord.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/chartsu.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/chartsuClient.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/createsujetAmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/createupdate.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/dashboradtest.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/forum_client.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/forum_page.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/mysujet.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/showcategories.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/showcomments.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/showcommentsAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/update_commentaire.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Resources/views/Sujets/updatecommentaireAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Tests/Controller/CategorieSuControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Tests/Controller/ChartSuControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Tests/Controller/CommentaireSuControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Tests/Controller/MobileControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ForumBundle/Tests/Controller/SujetControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProductBundle/Controller/PdfController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProductBundle/Controller/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProductBundle/Controller/ProductcategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProductBundle/Tests/Controller/ProductControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProductBundle/Tests/Controller/ProductcategoryControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Controller/CommentaireController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Controller/Mobile22Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Controller/PublicationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Entity/Commentaire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Entity/Publication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Form/CommentaireType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Form/PublicationType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Repository/CommentaireRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Repository/PublicationRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Resources/config/routing/commentaire.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Resources/config/routing/publication.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Tests/Controller/CommentaireControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Tests/Controller/Mobile22ControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PublicationBundle/Tests/Controller/PublicationControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Controller/AdminReportIssueController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Controller/AdminTicketController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Controller/MobileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Controller/ReactAdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Controller/ReportIssueController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Controller/TicketController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Entity/ReactAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Entity/ReportIssue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Form/ReactAdminType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Form/ReportIssueType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Form/TicketType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Repository/ReactAdminRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Repository/ReacteAdminRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Repository/ReportIssueRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/config/routing/catreclamation.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/config/routing/reactadmin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/config/routing/reportissue.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/config/routing/ticket.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/Default/AdminHistory.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeAdmin/UpdateCategoryAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeAdmin/admin_dashbord.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeAdmin/createCategoryAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeAdmin/readAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeAdmin/readCategoryAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeReportIssue/UpdateC.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeReportIssue/createC.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeReportIssue/readeC.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeTickets/Update.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeTickets/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeTickets/hist_of_tickets.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/HomeTickets/reade.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/reactadmin/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/reactadmin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/reactadmin/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Resources/views/reactadmin/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Tests/Controller/AdminReportIssueControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Tests/Controller/AdminTicketControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Tests/Controller/MobileControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Tests/Controller/ReactAdminControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Tests/Controller/ReportIssueControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicketBundle/Tests/Controller/TicketControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Chick_Click.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chick_Click.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base_back.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base_back.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base_back_admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base_back_admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.phar" beforeDir="false" afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mahmoud/EventBundle/Controller/HomeEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mahmoud/EventBundle/Controller/HomeEventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mahmoud/EventBundle/Resources/views/HomeEvent/detail_event.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mahmoud/EventBundle/Resources/views/HomeEvent/detail_event.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mahmoud/EventBundle/Resources/views/HomeEvent/my_event.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mahmoud/EventBundle/Resources/views/HomeEvent/my_event.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s doctrine:schema:update --dump-sql " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s debug:router " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="composer require knplabs/knp-paginator-bundle" />
+      <command text="composer.phar  require knplabs/knp-paginator-bundle" />
+      <command text="c  require knplabs/knp-paginator-bundle" />
+      <command text="c require mgilet/notification-bundle" />
+      <command text="s doctrine:schema:update --dump-sql " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update --dump-sql " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entity " />
+      <command text="s doctrine:schema:update --dump-sql " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s generate:bundle " />
+      <command text="s doctrine:generate:entity " />
+      <command text="s doctrine:schema:update --dump-sql " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s generate:bundle " />
+      <command text="s generate:bundle" />
+      <command text="c dump-autoload" />
+      <command text="s generate:bundle " />
+      <command text="s doctrine:generate:entity " />
+      <command text="s doctrine:schema:update --force " />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/mgilet/notification-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1WBBYtIPFtvOzokzE1R2vSUlAUc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Chick_Click\src\ProductBundle" />
+      <recent name="C:\wamp64\www\Chick_Click\src\ProductBundle\Resources\views" />
+      <recent name="C:\wamp64\www\Chick_Click\src\ProductBundle\Controller" />
+      <recent name="C:\wamp64\www\Chick_Click\app\Resources\views" />
+      <recent name="C:\wamp64\www\Chick_Click\src\UserBundle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Chick_Click\src\FollowBundle\Resources\config" />
+      <recent name="C:\wamp64\www\Chick_Click\src\FollowBundle" />
+      <recent name="C:\wamp64\www\Chick_Click\src\FollowBundle\Controller" />
+      <recent name="C:\wamp64\www\Chick_Click\src\AskBundle\Controller" />
+      <recent name="C:\wamp64\www\Chick_Click\src\AskBundle\Resources\views" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="s doctrine:generate:entity" />
+      <command value="s generate:bundle" />
+      <command value="s doctrine:schema:update --force" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Chick_Click" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.Chick_Click" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61aa584e-314d-470a-b9af-04245f34c716" name="Default" comment="" />
+      <created>1573828875158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573828875158</updated>
+      <workItem from="1573828982826" duration="598000" />
+      <workItem from="1574244656408" duration="4861000" />
+      <workItem from="1574289517287" duration="18149000" />
+      <workItem from="1574436076356" duration="2910000" />
+      <workItem from="1574456855229" duration="1349000" />
+      <workItem from="1574460617725" duration="258000" />
+      <workItem from="1574460901039" duration="3000" />
+      <workItem from="1574510495958" duration="208000" />
+      <workItem from="1574539375924" duration="28130000" />
+      <workItem from="1574613656132" duration="24452000" />
+      <workItem from="1574687315916" duration="4901000" />
+      <workItem from="1574716427559" duration="17186000" />
+      <workItem from="1574790930670" duration="23649000" />
+      <workItem from="1574854632484" duration="1281000" />
+      <workItem from="1574863913739" duration="24197000" />
+      <workItem from="1574894842783" duration="15666000" />
+      <workItem from="1574966510174" duration="10822000" />
+      <workItem from="1575036139948" duration="14553000" />
+      <workItem from="1575062415042" duration="9025000" />
+      <workItem from="1575117859284" duration="7089000" />
+      <workItem from="1575133223916" duration="11721000" />
+      <workItem from="1575197917205" duration="16593000" />
+      <workItem from="1575284454877" duration="12548000" />
+      <workItem from="1575301564777" duration="23921000" />
+      <workItem from="1575379366814" duration="23615000" />
+      <workItem from="1575408443047" duration="7941000" />
+      <workItem from="1575418195540" duration="7328000" />
+      <workItem from="1575471806721" duration="7294000" />
+      <workItem from="1575479520258" duration="634000" />
+      <workItem from="1575487669380" duration="4980000" />
+      <workItem from="1575494124301" duration="5650000" />
+      <workItem from="1575526737254" duration="8830000" />
+      <workItem from="1575538492854" duration="1548000" />
+      <workItem from="1576078442980" duration="1635000" />
+      <workItem from="1576106467796" duration="63000" />
+      <workItem from="1576108156409" duration="817000" />
+      <workItem from="1576109130694" duration="506000" />
+      <workItem from="1576109655915" duration="551000" />
+      <workItem from="1576110416287" duration="2840000" />
+      <workItem from="1576138825579" duration="2287000" />
+      <workItem from="1576666634487" duration="613000" />
+      <workItem from="1576848528419" duration="5430000" />
+      <workItem from="1577014463269" duration="2237000" />
+      <workItem from="1577037553417" duration="1798000" />
+      <workItem from="1577179157710" duration="4284000" />
+      <workItem from="1577267238529" duration="59892000" />
+      <workItem from="1577702159138" duration="6680000" />
+      <workItem from="1577796811467" duration="5543000" />
+      <workItem from="1577818753397" duration="862000" />
+      <workItem from="1577823971679" duration="6042000" />
+      <workItem from="1577885321351" duration="2049000" />
+      <workItem from="1577902887279" duration="643000" />
+      <workItem from="1577969121652" duration="1830000" />
+      <workItem from="1578600113429" duration="924000" />
+      <workItem from="1578601624716" duration="1461000" />
+      <workItem from="1578613161876" duration="4882000" />
+      <workItem from="1578650532345" duration="3397000" />
+      <workItem from="1578913505613" duration="1356000" />
+      <workItem from="1579000641691" duration="5173000" />
+      <workItem from="1579093846489" duration="16297000" />
+      <workItem from="1579156166795" duration="750000" />
+      <workItem from="1581063784914" duration="21000" />
+      <workItem from="1581428108681" duration="712000" />
+      <workItem from="1582117749901" duration="496000" />
+      <workItem from="1582403210141" duration="2736000" />
+      <workItem from="1582625432974" duration="2743000" />
+      <workItem from="1582656878454" duration="5981000" />
+      <workItem from="1582720251796" duration="2424000" />
+      <workItem from="1582731439243" duration="6549000" />
+      <workItem from="1582744204025" duration="2685000" />
+      <workItem from="1582797777792" duration="4314000" />
+      <workItem from="1582811405520" duration="4067000" />
+      <workItem from="1582839982216" duration="1029000" />
+      <workItem from="1586561836727" duration="10000" />
+      <workItem from="1588618263289" duration="3878000" />
+      <workItem from="1603117568558" duration="602000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="260" y="282" key="FileChooserDialogImpl" timestamp="1582840413728">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="260" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582840413728" />
+    <state x="463" y="166" key="SettingsEditor" timestamp="1582403666232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582403666232" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1582797969716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582797969716" />
+    <state x="404" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1588618264278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="404" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588618264278" />
+  </component>
+</project>

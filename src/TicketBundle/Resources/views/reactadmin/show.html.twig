@@ -1,0 +1,36 @@
+{% extends 'dashbord.html.twig' %}
+
+{% block body %}
+    <h1>React Admin</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ reactAdmin.id }}</td>
+            </tr>
+            <tr>
+                <th>Reaction</th>
+                <td>{{ reactAdmin.reaction }}</td>
+            </tr>
+            <tr>
+                <th>Submitted At</th>
+                <td>{% if reactAdmin.submittedAt %}{{ reactAdmin.submittedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('reactadmin_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('reactadmin_edit', { 'id': reactAdmin.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

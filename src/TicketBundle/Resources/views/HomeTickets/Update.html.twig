@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Chick Click!</div>
+                <div class="intro-heading text-uppercase">WELCOME TO the reclamations</div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block aya %}
+<h1>Update your Ticket</h1>
+
+{{ form_start(form) }}
+Reporter : {{ form_widget(form.reporter) }}</br>
+Reporter Mail : {{ form_widget(form.reporterMail) }}</br>
+Reclamation About:* {{ form_widget(form.reclamationAbout) }}</br>
+Priority : {{ form_widget(form.priority) }}</br>
+Reporter Type : {{ form_widget(form.reporterType) }}</br>
+Description : {{ form_widget(form.description) }}</br>
+
+
+{#{{ form_widget(form.save) }}</br>#}
+    <button type="submit" class="btn btn-primary">Update</button>
+{{ form_end(form) }}
+{% endblock %}

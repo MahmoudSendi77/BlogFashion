@@ -1,0 +1,15 @@
+esprit_api_homepage:
+  path:     /
+  defaults: { _controller: ForumBundle:Default:index }
+
+all:
+  path:     /mobile/all
+  defaults: {_controller: ForumBundle:Mobile:all }
+
+find_task:
+  path:     /mobile/find/{id}
+  defaults: {_controller: ForumBundle:Mobile:find }
+
+create_task:
+  path:     /mobile/new
+  defaults: {_controller: ForumBundle:Mobile:new }

@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div >
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+
+
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block other %}
+
+
+    <section >
+
+        {% if verif==0 %}
+
+
+        <a href="{{ path('newfolow') }}">
+        <input class="btn btn-primary btn-l text-uppercase" type="button" onclick="GestionBouton1(this.id, 'desabon')" id="sabon" value="s'abonner"  /><br /><br />
+        </a>
+        <a href="{{ path('deletefolow') }}">
+            <input class="btn btn-primary btn-l text-uppercase" type="button" onclick="GestionBouton2(this.id, 'sabon')" id="desabon" value="se desabonner" disabled/><br /><br />
+        </a>
+        <a  href="{{ path('AskBundle_homeask_new') }}">
+        <input class="btn btn-primary btn-l text-uppercase"  type="button" id="ask" value="ask1" disabled  />
+        </a>
+        {% elseif (verifblok==0) and (verif==1) %}
+            <a href="{{ path('newfolow') }}">
+                <input class="btn btn-primary btn-l text-uppercase" type="button" onclick="GestionBouton1(this.id, 'desabon')" id="sabon" value="s'abonner" disabled /><br /><br />
+            </a>
+            <a href="{{ path('deletefolow') }}">
+                <input class="btn btn-primary btn-l text-uppercase" type="button" onclick="GestionBouton2(this.id, 'sabon')" id="desabon" value="se desabonner" /><br /><br />
+            </a>
+            <a  href="{{ path('AskBundle_homeask_new') }}">
+                <input class="btn btn-primary btn-l text-uppercase"  type="button" id="ask" value="ask1" />
+            </a>
+        {% elseif (verifblok==1) and (verif==1) %}
+                <a href="{{ path('newfolow') }}">
+                    <input class="btn btn-primary btn-l text-uppercase" type="button" onclick="GestionBouton1(this.id, 'desabon')" id="sabon" value="s'abonner" disabled /><br /><br />
+                </a>
+                <a href="{{ path('deletefolow') }}">
+                    <input class="btn btn-primary btn-l text-uppercase" type="button" onclick="GestionBouton2(this.id, 'sabon')" id="desabon" value="se desabonner" /><br /><br />
+                </a>
+                <a  href="{{ path('AskBundle_homeask_new') }}">
+                    <input class="btn btn-primary btn-l text-uppercase"  type="button" id="ask" value="ask1" disabled />
+                </a>
+
+
+        {% endif %}
+
+
+
+
+        <body>
+        </body>
+
+    {#<ul>
+        <li>
+            <a href="{{ path('AskBundle_homeask_new') }}">Create a new ask</a>
+        </li>
+    </ul>#}
+</section>
+
+{% endblock %}

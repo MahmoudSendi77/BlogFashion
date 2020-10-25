@@ -1,0 +1,64 @@
+
+    {% extends "base_back.html.twig" %}
+
+
+{% block content_event %}
+
+    <section class="bg-light page-section" id="portfolio">
+
+    <center>
+<table class="table table-sm table-dark" id="tableac">
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <input type="text" id="search" placeholder="Search Categories ...">
+    <script>
+        $(document).ready(function(){
+            $('#search').keyup(function(){
+                search_table($(this).val());
+            });
+            function search_table(value){
+                $('#tableac tbody tr').each(function(){
+                    var found = 'false';
+                    $(this).each(function(){
+                        if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)
+                        {
+                            found = 'true';
+                        }
+                    });
+                    if(found == 'true')
+                    {
+                        $(this).show();
+
+                    }
+                    else
+                    {
+                        $(this).hide();
+
+                    }
+                });
+            }
+        });
+    </script>
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Deal's Category Name</th>
+        <th scope="col">Update</th>
+        <th scope="col">Remove</th>
+    </tr>
+    </thead>
+    {% for i in listProductcategory %}
+    <tbody>
+    <tr>
+        <th scope="row">{{ i.getProductcatid }}</th>
+        <td>{{ i.getCatname }}</td>
+        <td><a href="{{path('update_category',{'productcatid':i.getProductcatid})}}">Edit</a></td>
+        <td><a href="{{path('delete_category',{'productcatid':i.getProductcatid})}}">Remove</a></td>
+    </tr>
+
+    </tbody>
+    {% endfor %}
+</table>
+        <div><a href="{{path('new_category')}}">ADD new category</a> </div>
+   </center>
+    </section>
+{% endblock  %}

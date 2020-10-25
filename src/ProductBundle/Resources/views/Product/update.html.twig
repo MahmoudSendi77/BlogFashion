@@ -1,0 +1,137 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style type="text/css">
+
+        .imgeve{
+
+            border-radius: 50%;
+            border: 1px solid #ddd;
+
+            padding: 5px;
+            width: 150px;
+            top: 150px;
+            /* == margin:5px 0px 5px 0px;*/
+            margin:-954px 718px 1px;
+        }
+        .imgeve2{
+
+            border-radius: 50%;
+            border: 1px solid #ddd;
+
+            padding: 5px;
+            width: 150px;
+            top: 150px;
+            /* == margin:5px 0px 5px 0px;*/
+            margin:-954px 718px 1px;
+        }
+        .titreevent{
+            margin:-954px 718px 1px;
+        }
+    </style>
+{% endblock %}
+
+  {% block header %}
+      <!-- Header -->
+      <header class="masthead">
+          <div class="container">
+              <div class="intro-text">
+                  <div class="intro-lead-in">Welcome To Chic Click!</div>
+                  <div class="intro-heading text-uppercase"> Update Your Deal </div>
+              </div>
+          </div>
+      </header>
+
+  {% endblock %}
+
+
+{%  block other %}
+
+    <br>
+    <br>
+
+
+    <div class="col-10 " >
+
+        <center>
+            <div class="col-4 " >
+                <h3> Update your Deal  </h3>
+                <hr>
+
+                <br>
+                <br>
+            </div>
+            <div class="col-6 " >
+
+                <div  class="w-75 -align-right">
+
+
+                    {{ include('@Product/Product/_formup.html.twig') }}
+
+                        <br>
+                         <br>
+
+                    <p>Today: {{ 'now'|date('Y-m-d') }}</p>
+                </div>
+                <div class="imgeve" >
+                    <br>
+                    <img src=" {{ img }}" alt="">
+
+                    <br>
+                </div>
+
+            </div>
+        </center>
+
+
+
+
+    </div>
+    <br>
+
+    <br>
+
+{% endblock %}
+
+ {% block footer %}
+     <!-- Footer -->
+     <footer class="footer">
+         <div class="container">
+             <div class="row align-items-center">
+                 <div class="col-md-4">
+                     <span class="copyright">Copyright &copy; Your Website 2019</span>
+                 </div>
+                 <div class="col-md-4">
+                     <ul class="list-inline social-buttons">
+                         <li class="list-inline-item">
+                             <a href="#">
+                                 <i class="fab fa-twitter"></i>
+                             </a>
+                         </li>
+                         <li class="list-inline-item">
+                             <a href="#">
+                                 <i class="fab fa-facebook-f"></i>
+                             </a>
+                         </li>
+                         <li class="list-inline-item">
+                             <a href="#">
+                                 <i class="fab fa-linkedin-in"></i>
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="col-md-4">
+                     <ul class="list-inline quicklinks">
+                         <li class="list-inline-item">
+                             <a href="#">Privacy Policy</a>
+                         </li>
+                         <li class="list-inline-item">
+                             <a href="#">Terms of Use</a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </footer>
+ {%  endblock %}

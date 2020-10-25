@@ -1,0 +1,12 @@
+{{ form_start(form) }}
+     Deal Name :   {{ form_widget(form.productname) }}
+     Description :   {{ form_widget(form.productdescription) }}
+     Stock :   {{ form_widget (form.stock) }}
+     Price :   {{ form_widget(form.price) }}
+
+
+     Photo :   {{ form_widget(form.productphoto) }}
+     Category :  {{ form_widget(form.productcatid) }}
+
+<button type="submit" class="btn btn-primary">Update</button>
+{{ form_end(form) }}

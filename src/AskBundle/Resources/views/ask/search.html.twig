@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div >
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+
+
+
+        </div>
+    </header>
+
+{% endblock %}
+{% block other %}
+    <br>
+    <table  class="col-lg-9 ">
+
+
+        <tbody>
+        {% for user in users %}
+
+            <tr>
+
+
+
+                <td><a href="{{ path('ask_homep', { 'id':user.id }) }}">{{user.username}}</a></td>
+
+
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <br>    <br>
+{% endblock %}

@@ -1,0 +1,24 @@
+catreclamation_index:
+    path:     /
+    defaults: { _controller: "TicketBundle:CatReclamation:index" }
+    methods:  GET
+
+catreclamation_show:
+    path:     /{id}/show
+    defaults: { _controller: "TicketBundle:CatReclamation:show" }
+    methods:  GET
+
+catreclamation_new:
+    path:     /new
+    defaults: { _controller: "TicketBundle:CatReclamation:new" }
+    methods:  [GET, POST]
+
+catreclamation_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TicketBundle:CatReclamation:edit" }
+    methods:  [GET, POST]
+
+catreclamation_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TicketBundle:CatReclamation:delete" }
+    methods:  DELETE

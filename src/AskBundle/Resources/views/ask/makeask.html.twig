@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div >
+
+        </div>
+    </header>
+
+{% endblock %}
+{% block other %}
+
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase"></h2>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-lg-12">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="row">
+
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="write your ask here"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index1') }}">Back to the list</a>
+                                <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_new') }}">send</a>
+
+
+
+
+                                {# {{ form_start(delete_form) }}
+                                     <input type="submit" class="btn btn-primary btn-l text-uppercase" value="Delete">
+                                     {{ form_end(delete_form) }}#}
+
+
+                            </div></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

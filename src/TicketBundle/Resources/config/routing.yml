@@ -1,0 +1,109 @@
+ticket_ticket:
+    resource: "@TicketBundle/Resources/config/routing/ticket.yml"
+    prefix:   /ticket
+
+show_ticket:
+    path:     /showTicket
+    defaults: { _controller: TicketBundle:Ticket:showTicket }
+
+delete_ticket:
+    path:     /delete/{id}
+    defaults: { _controller: TicketBundle:Ticket:delete }
+
+update_ticket:
+    path:     /update/{id}
+    defaults: { _controller: TicketBundle:Ticket:update }
+
+create_ticket:
+    path:     /create
+    defaults: { _controller: TicketBundle:Ticket:create }
+
+createImage_ticket:
+    path:     /createImage
+    defaults: { _controller: TicketBundle:Ticket:addTicketDB }
+
+findT_ticket:
+    path:     /findT/{id}
+    defaults: { _controller: TicketBundle:Mobile:find }
+
+findTAll_ticket:
+    path:     /findTAll
+    defaults: { _controller: TicketBundle:Mobile:findAll }
+
+
+show_reportissue:
+    path:     /showReportIssue
+    defaults: { _controller: TicketBundle:ReportIssue:showReportIssue }
+
+delete_reportissue:
+    path:     /deleteC/{id}
+    defaults: { _controller: TicketBundle:ReportIssue:deleteC }
+
+update_reportissue:
+    path:     /updateC/{id}
+    defaults: { _controller: TicketBundle:ReportIssue:updateC }
+
+create_reportissue:
+    path:     /createC
+    defaults: { _controller: TicketBundle:ReportIssue:createC }
+
+showA_ticket:
+    path:     /showTicketAdmin
+    defaults: { _controller: TicketBundle:Ticket:showTicketAdmin }
+
+reactadmin_index:
+    path:     /A
+    defaults: { _controller: "TicketBundle:ReactAdmin:index" }
+
+reactadmin_show:
+    path:     /{id}/showA
+    defaults: { _controller: "TicketBundle:ReactAdmin:show" }
+
+reactadmin_new:
+    path:     /newA
+    defaults: { _controller: "TicketBundle:ReactAdmin:new" }
+
+reactadmin_edit:
+    path:     /{id}/editA
+    defaults: { _controller: "TicketBundle:ReactAdmin:edit" }
+
+reactadmin_delete:
+    path:     /{id}/deleteA
+    defaults: { _controller: "TicketBundle:ReactAdmin:delete" }
+
+SendMail:
+    path:     /mail
+    defaults: { _controller: "TicketBundle:Default:SendMail" }
+
+showA_reportissue:
+    path:     /showReportIssueAdmin
+    defaults: { _controller: TicketBundle:ReportIssue:showReportIssueAdmin }
+
+deleteA_ticket:
+    path:     /deleteA/{id}
+    defaults: { _controller: TicketBundle:Ticket:deleteAdmin }
+
+deleteA_reportissue:
+    path:     /deleteCA/{id}
+    defaults: { _controller: TicketBundle:ReportIssue:deleteCAdmin }
+
+updateA_reportissue:
+    path:     /updateCA/{id}
+    defaults: { _controller: TicketBundle:ReportIssue:updateCAdmin }
+
+createA_reportissue:
+    path:     /createCA
+    defaults: { _controller: TicketBundle:ReportIssue:createCAdmin }
+allMobi:
+    path:     /allMobi
+    defaults: { _controller: TicketBundle:Mobile:allMobile }
+deleteMobile:
+    path:     /deleteMobile/{id}
+    defaults: { _controller: TicketBundle:Mobile:deleteMobile }
+newMobile:
+    path:     /newMobile
+    defaults: { _controller: TicketBundle:Mobile:newMobile }
+
+updateMobile:
+    path:     /updateMobile/{id}
+    defaults: { _controller: TicketBundle:Mobile:updateMobile }

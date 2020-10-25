@@ -1,0 +1,24 @@
+reactadmin_index:
+    path:     /
+    defaults: { _controller: "TicketBundle:ReactAdmin:index" }
+    methods:  GET
+
+reactadmin_show:
+    path:     /{id}/show
+    defaults: { _controller: "TicketBundle:ReactAdmin:show" }
+    methods:  GET
+
+reactadmin_new:
+    path:     /new
+    defaults: { _controller: "TicketBundle:ReactAdmin:new" }
+    methods:  [GET, POST]
+
+reactadmin_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TicketBundle:ReactAdmin:edit" }
+    methods:  [GET, POST]
+
+reactadmin_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TicketBundle:ReactAdmin:delete" }
+    methods:  DELETE

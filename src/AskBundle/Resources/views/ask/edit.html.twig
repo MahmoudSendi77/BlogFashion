@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </header>
+
+
+{% endblock %}
+
+{% block other %}
+    <br> <br> <br>
+    <form {{ path('AskBundle_homeask_edit', { 'id': ask.id }) }} method="post">
+
+        <textarea class="form-control" name="message" placeholder="write your ask here" >{{ ask.messageDetails }}</textarea>
+        <br>
+        <ul>
+            <input class="btn btn-primary btn-l text-uppercase" type="submit" name="envoi" value="modify">
+            <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index1') }}">Back to the list</a>
+
+        </ul>
+    </form>
+
+{#
+    {{ form_start(edit_form) }}
+        {{ form_widget(edit_form) }}
+        <input class="btn btn-primary btn-l text-uppercase" type="submit" value="Edit" />
+    {{ form_end(edit_form) }}
+
+    <ul>
+
+            <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index') }}">Back to the list</a>
+
+            {{ form_start(delete_form) }}
+                <input class="btn btn-primary btn-l text-uppercase" type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+
+    </ul>#}
+{% endblock %}

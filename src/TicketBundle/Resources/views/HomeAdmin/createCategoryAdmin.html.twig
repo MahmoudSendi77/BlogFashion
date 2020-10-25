@@ -1,0 +1,15 @@
+{% extends "base_back.html.twig" %}
+
+{% block content_event %}
+    <h3>  {{ quote }}  </h3>
+    {#{{ include('@Ticket/HomeTickets/reade.html.twig') }}#}
+
+    {{ form_start(form) }}
+    Type of the category : {{ form_widget(form.typeR) }}</br>
+    Content of the category: {{ form_widget(form.content) }}</br>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+    {{ form_end(form) }}
+
+    <p>Today: {{ 'now'|date('Y-m-d') }}</p>
+{% endblock %}

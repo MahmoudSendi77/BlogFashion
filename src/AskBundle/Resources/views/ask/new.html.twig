@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+           <br>
+
+            <br>
+            <br>
+            <br>
+
+
+
+
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block other %}
+    <br>
+
+    <h1>Ask me!</h1>
+    <br>
+
+
+
+    {# {{ form_start(form) }}
+         {{ form_widget(form) }}
+         <input type="submit" value="Create" />#}
+
+        {% if 0+nm == 0 %}
+            <form {{ path('AskBundle_homeask_new') }} method="post">
+
+        <textarea class="form-control" name="message" placeholder="write your ask here" ></textarea>
+        <br>
+        <ul>
+            <input class="btn btn-primary btn-l text-uppercase" type="submit" name="envoi" value="send">
+            <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index1') }}">Back to the list</a>
+
+        </ul>
+            </form>
+            {% endif %}
+
+    {#        {% if 0+nm == 1 %}
+                <form  method="post">
+                <textarea class="form-control" name="message" placeholder="write your ask here" >{{ msg }}</textarea>
+                <br>
+                <ul>
+#}{#
+                    <input class="btn btn-primary btn-l text-uppercase" type="submit" name="modify" value="modify">
+#}{#
+                    <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index') }}">Back to the list</a>
+
+
+
+                    <a class="btn btn-primary btn-l text-uppercase" type="submit" name="modify" href="{{ path('ask_make1') }}">modify</a>
+
+                </ul>
+                </form>
+
+
+            {% endif %}
+    {% if 0+nm == 2 %}
+        <form {{ path('AskBundle_homeask_new7') }}" method="post">
+        <textarea class="form-control" name="message"  >{{ msg }}</textarea>
+        <br>
+        <ul>
+            <input class="btn btn-primary btn-l text-uppercase" type="hiden" name="envoi" value="send" disabled >
+
+            <input class="btn btn-primary btn-l text-uppercase" type="submit" name="modify" value="modify">
+            <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index') }}">Back to the list</a>
+
+        </ul>
+        </form>
+    {% endif %}
+#}
+
+
+
+
+
+{#
+        <a  href="{{ path('AskBundle_homeask_new') }}" type="submit" name="envoi"  >send</a>
+#}
+
+
+
+
+
+
+
+   {# <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase"></h2>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-lg-12">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="row">
+
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message11" id="message11" placeholder="write your ask here"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <a class="btn btn-primary btn-l text-uppercase" href="{{ path('AskBundle_homeask_index') }}">Back to the list</a>
+                                <a class="btn btn-primary btn-l text-uppercase" href="{{ path('ask_make', { 'msg1':'message'}) }}">send</a>
+
+
+
+
+                                #}{# {{ form_start(delete_form) }}
+                                     <input type="submit" class="btn btn-primary btn-l text-uppercase" value="Delete">
+                                     {{ form_end(delete_form) }}#}{#
+
+
+                            </div></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>#}
+{% endblock %}

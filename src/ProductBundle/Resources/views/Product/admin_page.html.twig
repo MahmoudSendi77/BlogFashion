@@ -1,0 +1,103 @@
+{% extends "base_back.html.twig" %}
+
+
+{% block content_event %}
+
+
+
+    {#{% extends "base1.html.twig" %}
+
+
+    {% block body %}#}
+
+
+        <hr>
+        <hr>
+        <div class="product">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                        {% for i in  listProduct %}
+
+                            <!-- Event -->
+                            <div class="product">
+                                <div class="row row-lg-eq-height">
+                                    <div class="col-lg-6 product_col">
+                                        <div class="product_image_container">
+                                            <div class="background_image" style="background-image: url({{ i.displayPhoto }})" > </div>
+                                            <img src=" {{ i.displayPhoto  }} " class="card-img-top" alt="Deal's photo">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 event_col">
+                                        <div class="product_content">
+                                            <div class="product_title" >{{ i.getProductname }}</div>
+
+                                            <div class="product_description">
+                                                <p>{{ i.getProductdescription }}</p>
+                                            </div>
+                                            <div class="product_price ">
+                                                <div class="product_price"><p>{{ i.getPrice }} TND</p>  </div>
+                                            </div>
+
+
+                                            <div ><a href=" {{path('show_detailedproductadmin',{'productid':i.getProductid})}}" class="white-text d-flex justify-content-end"><h5>Read more <i class="fas fa-angle-double-right"></i></h5></a>
+                                               {# <a href="{{path('update_product',{'productid':i.getProductid})}}" class="white-text d-flex justify-content-end"><h5> Update <i class="fas fa-angle-double-right"></i></h5></a>#}
+                                                <a href="{{path('delete_productadmin',{'productid':i.getProductid})}}" class="white-text d-flex justify-content-end"><h5> Remove <i class="fas fa-angle-double-right"></i></h5></a>
+
+
+                                            </div>
+
+
+
+                                            <br>
+                                            <br>
+                                            <div class="event_speakers">
+                                                <!-- Event Speaker -->
+                                                <div class="event_speaker d-flex flex-row align-items-center justify-content-start">
+                                                    <div><div class="event_speaker_image"><img src="{{ asset('No-Image-Availbe.jpg') }}" alt=""></div></div>
+                                                    <div class="event_speaker_content">
+                                                        <div class="event_speaker_name">Michael Smith</div>
+                                                        <div class="event_speaker_title">Marketing Specialist</div>
+                                                    </div>
+                                                </div>
+                                                <!-- Event Speaker -->
+                                                <div class="event_speaker d-flex flex-row align-items-center justify-content-start">
+                                                    <div><div class="event_speaker_image"> <input type="image" data-image-src=""> </div></div>
+                                                    <div class="event_speaker_content">
+                                                        <div class="event_speaker_name" > </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div>
+                                 <br>
+                                    <br>
+                                </div>
+
+
+                        {% endfor %}
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            var l=1;
+            function Change() {
+                l=-l;
+                document.getElementById('val').value=l;
+
+            }
+        </script>
+
+{% endblock  %}

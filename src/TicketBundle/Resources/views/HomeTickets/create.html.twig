@@ -1,0 +1,88 @@
+{% extends "base.html.twig" %}
+{% block header %}
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To Chick Click!</div>
+                <div class="intro-heading text-uppercase">WELCOME TO the reclamations</div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
+{% block aya %}
+<h3>  {{ quote }}  </h3>
+{#{{ include('@Ticket/HomeTickets/reade.html.twig') }}#}
+
+    {{ form_start(form, {'attr':{'novalidate':'novalidate'}}) }}
+        {{ form_row(form.reporter) }}</br>
+        {{ form_row(form.reporterMail) }}</br>
+        {{ form_row(form.reclamationAbout) }}</br>
+        {{ form_row(form.priority) }}</br>
+        {{ form_row(form.reporterType) }}</br>
+        {{ form_row(form.description) }}</br>
+
+    {#<button type="submit" class="btn btn-primary">Add</button>#}
+    {{ form_end(form) }}
+
+<p>Today: {{ 'now'|date('Y-m-d') }}</p>
+{% endblock %}
+{% block Portfolio %}
+    <!-- Portfolio Grid -->
+    <section class="bg-light page-section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Reclamations</h2>
+                    <h3 class="section-subheading text-muted">Leave your ticket here.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>PUT ON YOUR RECLAMATION</h4>
+                        <p class="text-muted">Illustration</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>CHECK YOUR FEED BACK NOTIFICATIONS</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>CHECK YOUR TICKET HISTORY</h4>
+                        <p class="text-muted">Identity</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

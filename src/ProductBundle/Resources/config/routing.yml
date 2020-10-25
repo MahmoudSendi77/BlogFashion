@@ -1,0 +1,91 @@
+product_homepage:
+    path:     /
+    defaults: { _controller: ProductBundle:Default:index }
+
+
+index:
+    path:     /index
+    defaults: { _controller: ProductBundle:Product:index }
+
+show_product:
+    path:     /showproduct
+    defaults: { _controller: ProductBundle:Product:showProduct }
+
+new:
+    path:     /new
+    defaults: { _controller: ProductBundle:Product:new }
+
+update_product:
+    path:     /update/{productid}
+    defaults: { _controller: ProductBundle:Product:update }
+
+delete_product:
+    path:     /delete/{productid}
+    defaults: { _controller: ProductBundle:Product:delete }
+
+show_detailedproduct:
+    path:     /showdetailedproduct/{productid}
+    defaults: { _controller: ProductBundle:Product:showdetailedProduct }
+
+show_category:
+    path:     /showcategory
+    defaults: { _controller: ProductBundle:Productcategory:showCategory }
+
+delete_category:
+    path:     /deletecategory/{productcatid}
+    defaults: { _controller: ProductBundle:Productcategory:delete }
+
+update_category:
+    path:     /updatecategory/{productcatid}
+    defaults: { _controller: ProductBundle:Productcategory:updatecategory }
+
+new_category:
+    path:     /newcategory
+    defaults: { _controller: ProductBundle:Productcategory:new }
+
+show_productadmin:
+    path:     /showproductadmin
+    defaults: { _controller: ProductBundle:Product:adminManager }
+
+show_detailedproductadmin:
+    path:     /showdetailedproductadmin/{productid}
+    defaults: { _controller: ProductBundle:Product:showdetailedProductadmin }
+
+delete_productadmin:
+    path:     /deleteadmin/{productid}
+    defaults: { _controller: ProductBundle:Product:deleteAdmin }
+
+deal_pdf:
+    path:     /dealpdf/{productid}
+    defaults: { _controller: ProductBundle:Pdf:newPdf }
+index_pdf:
+    path:     /index
+    defaults: { _controller: ProductBundle:Pdf:index }
+
+show_detailedproductpdf:
+    path:     /showdetailedproductpdf/{productid}
+    defaults: { _controller: ProductBundle:Product:showdetailedProductpdf }
+
+mobile_product_add:
+    path:     /mobileproduct/add
+    defaults: { _controller: ProductBundle:Product:mobileProductAdd }
+
+mobile_event_modify:
+    path:     /mobileproductmodify
+    defaults: { _controller: ProductBundle:Product:mobileProductModify}
+
+mobile_product_delete:
+    path:     /mobiledeleteproduct/{productid}
+    defaults: { _controller: ProductBundle:Product:mobileProductDelete}
+
+mobile_allproduct:
+    path:     /mobileshowProduct
+    defaults: { _controller: ProductBundle:Product:mobilegetAllProduct}
+
+mobile_allproduct1:
+    path:     /mobonepro/{productid}
+    defaults: { _controller: ProductBundle:Product:mobilegetOneProduct}
+
+mobile_allproduct2:
+    path:     /mobileProductsbyuser/{productid}
+    defaults: { _controller: ProductBundle:Product:mobilegetProductByUser}

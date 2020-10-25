@@ -1,0 +1,91 @@
+{#{% extends "base1.html.twig" %}#}
+
+ {% extends "base_back.html.twig" %}
+{% block stylesheets %}
+    {{parent()}}
+
+    <!-- Import Leaflet CSS Style Sheet -->
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+    <style>
+        #my_osm_widget_map { /* use the same name as <div id=""> */
+            width: 100%; /* important! if you need full width display */
+            height: 400px;
+            margin: 0;
+            border-radius: 5px;
+            /* ... */
+        }
+    </style>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+{% endblock  %}
+
+
+{#{% block body %}#}
+{% block content_event %}
+
+
+    <!-- Import Leaflet JS Library -->
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+
+
+
+
+    <hr>
+    <hr>
+    <hr>
+
+    <center>
+        <div class="view overlay">
+
+
+            <!-- Card image -->
+            <div class="product_image_container">
+                <img class="card-body elegant-color white-text rounded-bottom  w-50 p-3 h-10 d-inline-block align-content-md-center"  src="{{ Product.displayPhoto  }}" alt="Card image cap">
+
+            </div>
+            <a>
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body elegant-color white-text rounded-bottom w-50 p-3 h-10 d-inline-block align-content-md-center" >
+
+            <!-- Social shares button -->
+            <a class="activator waves-effect mr-4"><i class="fas fa-share-alt white-text"></i></a>
+            <!-- Title -->
+            <h2 class="card-title">{{ Product.getProductname }}</h2>
+            <hr class="hr-light">
+            <!-- Text -->
+            <p class="card-text white-text mb-4"><h4>{{ Product.getProductdescription }}</h4></p>
+            <!-- Link -->
+            <p class="card-text white-text mb-4">{{ Product.getProductcatid }}</p>
+        </div>
+        <div class="product_price ">
+            <div class="product_price"><p>{{ Product.getPrice }} TND</p>  </div>
+            <div class="product_price"><p> {{ Product.getStock }} </p>  </div>
+        </div>
+        <div >
+
+            <a href="{{path('show_detailedproductpdf',{'productid':Product.getProductid})}}" class="white-text d-flex justify-content-end"> Get PDF Form <i class="fas fa-angle-double-right"></i></a>
+
+
+        </div>
+
+
+    </center>
+
+
+
+
+    {% block javascripts %}
+        {{ parent() }}
+    {% endblock %}
+
+{%  endblock %}
+
